@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { store } from '../store';
 import Login from './login';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import {auth} from '../pages/firestore'
+import {auth} from '../firestore'
 
 function MyApp({ Component, pageProps }) {
 

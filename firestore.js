@@ -19,4 +19,4 @@ const firebaseConfig = {
 
   const provider = new GoogleAuthProvider();
 
-  export {db,auth,provider};
+   export {db,auth,provider};

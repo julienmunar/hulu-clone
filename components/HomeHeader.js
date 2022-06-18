@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { BadgeCheckIcon, CollectionIcon, HomeIcon, LightningBoltIcon, SearchIcon, UserIcon } from '@heroicons/react/outline'
 import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { auth } from '../pages/firestore';
+import { auth } from '../firestore';
 import { useRouter } from 'next/router'
 
 const HomeHeader = ({ title, Icon }) => {

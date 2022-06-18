@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import {auth,provider} from '../pages/firestore'
+import {auth,provider} from '../firestore'
 import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 const Header = () => {
 
