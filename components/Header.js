@@ -29,7 +29,7 @@ const signIn=()=>{
     <header className='  py-8 px-12 w-full left-0 top-0 h-40 bg-gradient-to-b from-[rgba(0,0,0,0.9)] to-transparent via-[#00000088]'>
         {/* Gradient */}
         <div className='flex  justify-between' >
-        <Image src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg" className='' width={70} height={20} />
+        <Image src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg" alt='Icon'  className='' width={70} height={20} />
         <p onClick={signIn} className=' font-bold text-gray-400 cursor-pointer text-md '>LOG IN</p>
         </div>
     </header>

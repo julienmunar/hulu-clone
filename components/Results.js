@@ -18,20 +18,19 @@ const Results = ({ data, DisplayVideo, CloseVideo }) => {
   return (
     <div className='sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 xl:mx-5'>
       {data.map((res) => {
-    
+        console.log(res)
         return (
-          <div>
+        
 
 
-            <div className='p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-110 z-20 ' key={res.id} onClick={()=>{setVideoId(res.id); setModalOpen(true)}}>
-              <Image src={`http://image.tmdb.org/t/p/original/${res.backdrop_path}`} height={1080} layout="responsive" width={1920} className=" rounded-sm" />
+            <div className='p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-110 z-20 ' key={`${res.backdrop_path}`} onClick={()=>{setVideoId(res.id); setModalOpen(true)}}>
+              <Image src={`http://image.tmdb.org/t/p/original/${res.backdrop_path}`} height={1080} layout="responsive"  alt='ImageWallpaper' width={1920} className=" rounded-sm" />
               <p className='text-white text-xs truncate'>{res.overview}</p>
               <h2 className='text-white font-bold '>{res.title}</h2>
               <p className='text-white text-xs flex items-center opacity-0 group-hover:opacity-100'>{res.release_date} - {<ThumbUpIcon className='h-5 mx-2' />}  {res.vote_count} </p>
 
             </div>
-          
-          </div>
+    
         )
       })}
   {isModalOpen ? (<VideoModal  CloseVideo={closeModal} videoId={videoId}/>) : (<></>)}

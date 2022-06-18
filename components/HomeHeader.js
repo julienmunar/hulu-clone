@@ -23,7 +23,7 @@ const HomeHeader = ({ title, Icon }) => {
                 <HomeHeaderList title='ACCOUNT LOGOUT' Icon={UserIcon} logout={logGout}/>
             </div>
             <div >
-                <Image src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg" className='' width={150} height={50} />
+                <Image src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg" alt='ImageWallpaper'  className='' width={150} height={50} />
             </div>
         </div>
     )

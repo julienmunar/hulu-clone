@@ -37,7 +37,7 @@ const MovieClass=({link,category,release})=>{
          <p className='absolute  text-white text-base  font-bold top-8 left-8 z-20'>{release}</p>
          <p className='absolute text-white  text-2xl font-bold top-14 left-8 z-20'>{category}</p>
 
-         <img src={link} width={294} height={540} className=""/>
+         <img src={link}  alt='ImageWallpaper' width={294} height={540} className=""/>
 
      </div>
     )
