@@ -9,7 +9,7 @@ const Welcome = () => {
                 {/* HEADER */}
                 <Header />
                 {/* HERO */}
-                {/* <Hero /> */}
+                <Hero />
             </div>
             <div className=' bg-[#0b0c0f] text-center'>
                 <p className='text-[#1CE783] font-medium pt-24 pb-4'>INCLUDED IN ALL PLANS</p>

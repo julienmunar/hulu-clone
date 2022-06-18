@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 import Img from '../assets/images/logo-0-1-2-0.full.png'
 
 const Hero = () => {
