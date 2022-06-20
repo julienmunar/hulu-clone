@@ -54,13 +54,14 @@ const VideoModal = ({ CloseVideo,videoId}) => {
   } , [])
 
   return (
-    <div onClick={CloseVideo} className='absolute top-0  lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] bg-gray-500 bg-opacity-0  z-30'>
+    <div onClick={CloseVideo} className='fixed top-0 w-full h-full  bg-black bg-opacity-70  z-30'>
 
       <div>
         
       </div>
-      <div className='z-50 p-16' >
-        <ReactPlayer controls={true} playing={true} url={`https://www.youtube.com/watch?v=${youtubeId}`} />
+      <div className='z-50' >
+        <ReactPlayer controls={true} playing={true} url={`https://www.youtube.com/watch?v=${youtubeId} `}   width="100%"
+            height="100%" />
        
       </div>
 
