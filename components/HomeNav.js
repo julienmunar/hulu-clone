@@ -6,10 +6,10 @@ const HomeNav = () => {
    const router = useRouter()
 
    return (
-      <div className='relative pb-16 xl:mx-8'>
+      <div className='relative pb-8 lg:mx-14'>
 
 
-         <div className='flex space-x-14 pl-10 pr-10 lg:space-x-20 overflow-y-hidden whitespace-nowrap scrollbar-hide justify-center text-white'>
+         <div className='flex px-10  space-x-8 lg:space-x-20  overflow-x-scroll scrollbar-hide  whitespace-nowrap   text-white'>
             {Object.entries(apiTmdb).map(([key, { title, url }]) => {
 
                const routeTo = () => {
@@ -18,7 +18,7 @@ const HomeNav = () => {
                }
                return (
 
-                  <div className=' transition duration-100 transform hover:scale-125 cursor-pointer active:text-red-500' onClick={routeTo} key={`${key}${title}`}>
+                  <div className=' last:pr-24 transition duration-100 transform hover:scale-125 cursor-pointer active:text-red-500' onClick={routeTo} key={`${key}${title}`}>
                      <p>{title}</p>
                   </div>
 
