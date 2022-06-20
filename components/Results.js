@@ -54,7 +54,7 @@ const VideoModal = ({ CloseVideo,videoId}) => {
   } , [])
 
   return (
-    <div onClick={CloseVideo} className='absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-gray-500 bg-opacity-0  z-30'>
+    <div onClick={CloseVideo} className='absolute top-0  lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] bg-gray-500 bg-opacity-0  z-30'>
 
       <div>
         

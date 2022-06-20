@@ -15,7 +15,7 @@ const Welcome = () => {
                 <p className='text-[#1CE783] font-medium pt-24 pb-4'>INCLUDED IN ALL PLANS</p>
                 <p  className='text-white text-5xl font-bold pb-8'> All The TV You Love</p>
                 <p  className='text-white text-lg pb-11 font-medium'>Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu Originals,<br/> kids shows, and more.</p>
-                <div className='flex space-x-5 justify-center pb-48'>
+                <div className='flex flex-col md:flex-row items-center space-x-5 space-y-2 justify-center pb-48'>
                     <MovieClass link={'https://www.hulu.com/static/hitch/s3/attachments/ckzix4ce0m28n1k7rwhwjufa7-ckllond4i0i9w1u7ghnu91j1b-bobsburgers-category-tile-294x450-1x-full.jpg'} category='TV Shows' release='Past & Current Seasons'/>
                     <MovieClass link={'https://www.hulu.com/static/hitch/s3/attachments/ckzix6os0m2cl1k7rmtowojwd-cklms7f221g6z1u6ye8eurm1e-unitedstatesvsbillieholiday-category-tile-294x450-1x-1-full.jpg'} category='Movies' release='New & Classic'/>
                     <MovieClass link={'https://www.hulu.com/static/hitch/s3/attachments/ckzix9rkis6t31v5mteb3tnon-ckzix7nm8s6q01v5mrhx8mjms-cktarx0vs0o9q1w7av35olnl8-nine-perfect-strangers-category-poster-tile-294x450-2x-full-full.jpg'} category='Hulu Originals' release='Past & Current Seasons'/>
