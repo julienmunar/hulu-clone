@@ -59,7 +59,7 @@ const VideoModal = ({ CloseVideo,videoId}) => {
       <div>
         
       </div>
-      <div className='z-50' >
+      <div className='z-50 h-[40%] lg:h-[70%]' >
         <ReactPlayer controls={true} playing={true} url={`https://www.youtube.com/watch?v=${youtubeId} `}   width="100%"
             height="100%" />
        
